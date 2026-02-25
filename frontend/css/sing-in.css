@@ -1,0 +1,194 @@
+.body-configuration {
+    background-color:  rgb(186, 73, 73);
+}
+
+.sing-up-container {
+    margin-top: 200px;
+    width: 300px;
+    height: 500px;
+}
+
+.title {
+    color: white;
+    font-size: 45px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;    
+}
+
+.icon-title {
+    margin-right: 15px;
+}
+
+.data-container {
+    background-color: white;
+    max-width: 370px;
+    width: 95%;
+    height: 300px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1px;
+}
+
+.google-icon {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.sing-up-google {
+    display: block;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 330px;
+    border: solid 1px gray;
+}
+
+.text-separetion {
+    color: black;
+}
+
+.email-text {
+    color: black;
+    /* Usamos el mismo ancho máximo que los botones */
+    max-width: 325px !important;
+    width: 95% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    
+    /* Alineamos el texto a la izquierda */
+    text-align: left;
+    
+    /* Ajustes de espaciado */
+    padding: 0 !important; 
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.email-textfield {
+    max-width: 325px !important;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #efefef;
+}   
+
+.email-textfield:focus {
+    outline: none;
+}
+
+.send-data {
+    max-width: 325px !important;
+    margin-left: 9px !important;
+    width: 95%;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 7px;
+    border: none;
+    background-color: #45474b;
+    color: white;
+}
+
+.send-data:hover {
+    background-color: #535356;
+}
+
+.log-in-text {
+    text-decoration: underline;
+    font-weight: bold;
+    color: white;
+}
+
+.already-account-text {
+    font-weight: bold;
+}
+
+.btn-google {
+    display: block;
+    border: none;
+    outline: none;
+    max-width: 325px;
+    width: 95%;
+    border-radius: 5px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Ajuste para los botones para que coincidan perfectamente */
+.btn-google, .send-data, .email-textfield {
+    display: block;
+    width: 95% !important;
+    max-width: 325px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.left-line, .rigth-line {
+    flex: 1;         /* Esto permite que la línea crezca hasta tocar el borde */
+    height: 0;       /* La línea se define por su borde, no por su altura */
+    border: none;
+    border-top: 1px solid #d1d1d1; /* El color de la línea */
+    margin: 0;       /* Eliminamos márgenes de Bootstrap que causan desbordamiento */
+    opacity: 1;
+}
+
+.separetion-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* IMPORTANTE: Estas 2 líneas deben ser iguales a las de .btn-google y .send-data */
+    width: 95%;
+    max-width: 325px; 
+    
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text-separetion {
+    color: #777;
+    padding: 0 14px;
+    margin-bottom: 0;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+/* El separador usa Flexbox para estirar las líneas */
+.separetion-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 310px) {
+    .title-text {
+        display: none;
+    }
+
+    .title {
+        font-size: 70px;
+        font-weight: bold;
+    }
+
+    .btn-google-text {
+        font-size: 0px;
+    }
+
+    .text-btn-send-data {
+        font-size: 0px;
+    }
+
+    .text-btn-send-data::after {
+        content: "Send";
+        font-size: 20px;
+    }
+}
