@@ -12,7 +12,7 @@ services:
     build: ./backend # lo que hace es buscar en el directorio actual el Dockerfile
     container_name: backend_app
     ports:
-      - "8080:8080"
+      - "8080:8080" # Esto sirve para mapear los puertos le estas diciendo que cualquier petición que llegue al puerto 8080 de la computadora host se le pasa al puerto 8080 del contenedor
     depends_on:
       - db       
     restart: on-failure
